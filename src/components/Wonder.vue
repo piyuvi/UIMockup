@@ -8,7 +8,7 @@
     ></v-progress-circular>
   </div>
   <v-toolbar class="topHeader">
-    <v-toolbar-title><img src="../assets/logo.png" height="80" width="160"></v-toolbar-title>
+    <v-toolbar-title><img src="https://rupeek.com/images/logo.svg" height="80" width="160" style="margin-top: 18px;"></v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-side-icon></v-toolbar-side-icon>
   </v-toolbar>
