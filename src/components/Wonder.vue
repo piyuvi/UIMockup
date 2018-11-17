@@ -126,7 +126,7 @@ export default {
   },
   mounted () {
     // this.selectedSort = this.items[0]
-    axios.get('http://www.mocky.io/v2/5bdd28dd32000075008c6227')
+    axios.get('https://www.mocky.io/v2/5bdd28dd32000075008c6227')
       .then(res => {
         if (res.data) {
           this.wonders = JSON.parse(sessionStorage.getItem('likedArray')) || res.data.data
