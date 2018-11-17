@@ -8,7 +8,7 @@
     ></v-progress-circular>
   </div>
   <v-toolbar class="topHeader">
-    <v-toolbar-title><img src="../assets/logo.svg" height="120" width="120"></v-toolbar-title>
+    <v-toolbar-title><img src="../assets/logo.png" height="80" width="160"></v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-side-icon></v-toolbar-side-icon>
   </v-toolbar>
