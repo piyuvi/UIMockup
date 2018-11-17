@@ -216,7 +216,7 @@ export default {
     margin-top: -7px;
   }
   .white {
-    background-color: rgba(255, 255, 255, 0.815)!important;
+    background-color: rgba(255, 255, 255, 0.692)!important;
   }
   .theme--light.v-text-field--solo-inverted.v-text-field--solo.v-input--is-focused .v-input__slot input {
     color: #3e2b2b;
