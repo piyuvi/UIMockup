@@ -1,14 +1,14 @@
 <template>
 <v-app>
-  <div class="text-xs-center">
+  <div class="loader">
   <v-progress-circular
       indeterminate
-      v-if="isLoading"
       color="primary"
+      v-if="isLoading"
     ></v-progress-circular>
   </div>
   <v-toolbar class="topHeader">
-    <v-toolbar-title><img src="https://rupeek.com/images/logo.svg" height="80" width="160" style="margin-top: 18px;"></v-toolbar-title>
+    <v-toolbar-title><img src="https://rupeek.com/images/logo.svg" height="70" width="125" style="margin-top: 12px;"></v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-side-icon></v-toolbar-side-icon>
   </v-toolbar>
@@ -59,7 +59,7 @@
             :src=wonder.imageURL
           >
           <v-card v-if="hover" class="d-flex transition-fast-in-fast-out white darken-1 v-card--reveal gray--text .title"
-            style="text-align:justify;height: 100%;" :fullscreen="$vuetify.breakpoint.xsOnly">
+            style="text-align:justify;height: 100%;opacity: 0.9;" :fullscreen="$vuetify.breakpoint.xsOnly">
                <v-card-text>
                  <v-btn icon style="float:right" @click="callLiked(wonder)" @click.stop>
                     <v-icon v-if="!wonder.clicked">favorite_border</v-icon>
@@ -216,10 +216,13 @@ export default {
     margin-top: -7px;
   }
   .white {
-    background-color: rgba(255, 255, 255, 0.692)!important;
+    background-color: rgba(255, 255, 255, 0.555)!important;
   }
   .theme--light.v-text-field--solo-inverted.v-text-field--solo.v-input--is-focused .v-input__slot input {
     color: #3e2b2b;
+  }
+  .loader{
+    z-index:10;position:absolute; top:50%; left: 50%;
   }
 
 </style>
