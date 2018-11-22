@@ -219,6 +219,19 @@ export default {
   .bottomHeader{
     height: 180px !important;
   }
+   .toolbar1 {
+    padding-top: 10px !important;
+    width: 100% !important;
+  }
+  .toolbar4 {
+    width: 100% !important;
+  }
+  .v-toolbar__title:not(:first-child) {
+    margin-left: 0px !important;
+  }
+  .toolbar3 {
+    margin-left: 37px !important;
+  }
  }
  .toolbar1 , .toolbar4 {
    margin-top:3px !important;
@@ -237,11 +250,6 @@ export default {
     z-index:10;position:absolute; top:50%; left: 50%;
   }
  @media screen and (max-width: 500px) {
-  .toolbar1 {
-    float: none;
-    display: block;
-    text-align: left;
-  }
   .toolbar2 {
     float: none;
   }
