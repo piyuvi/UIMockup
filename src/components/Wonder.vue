@@ -8,13 +8,13 @@
     ></v-progress-circular>
   </div>
   <v-toolbar class="topHeader">
-    <v-toolbar-title><img src="https://rupeek.com/images/logo.svg" height="70" width="125" style="margin-top: 12px;"></v-toolbar-title>
+    <v-toolbar-title><img src="https://rupeek.com/images/logo.svg" height="70" width="125" style="margin-top:15px"></v-toolbar-title>
     <v-spacer></v-spacer>
-    <v-toolbar-side-icon></v-toolbar-side-icon>
+    <v-toolbar-side-icon class="iconDown"></v-toolbar-side-icon>
   </v-toolbar>
   <v-flex>
   <v-toolbar class="bottomHeader" flat>
-    <v-toolbar-title :fullscreen="$vuetify.breakpoint.xs">
+    <v-toolbar-title class="toolbar1">
       <v-autocomplete
       flat
       v-model="searchInput"
@@ -30,14 +30,14 @@
     ></v-autocomplete>
     </v-toolbar-title>
     <v-spacer></v-spacer>
-    <v-toolbar-title :fullscreen="$vuetify.breakpoint.xs">
+    <v-toolbar-title class="toolbar2">
       Total Likes: {{this.sessionLiked}}
     </v-toolbar-title>
-    <v-toolbar-title :fullscreen="$vuetify.breakpoint.xs">
+    <v-toolbar-title class="toolbar3">
       Total API Hits: {{this.apiHits}}
     </v-toolbar-title>
     <v-spacer></v-spacer>
-    <v-toolbar-title >
+    <v-toolbar-title class="toolbar4">
       <v-select
       flat
           :items="items"
@@ -211,6 +211,18 @@ export default {
     width: 400px;
     margin-top: 5px;
  }
+ .v-toolbar__content {
+    flex-wrap: wrap;
+    align-items: flex-start;
+ }
+ @media only screen and (max-width: 959px) {
+  .bottomHeader{
+    height: 180px !important;
+  }
+ }
+ .toolbar1 , .toolbar4 {
+   margin-top:3px !important;
+ }
  .v-rating{
     margin-left: 10px;
     margin-top: -7px;
@@ -224,6 +236,16 @@ export default {
   .loader{
     z-index:10;position:absolute; top:50%; left: 50%;
   }
+ @media screen and (max-width: 500px) {
+  .toolbar1 {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .toolbar2 {
+    float: none;
+  }
+}
 
 </style>
 
